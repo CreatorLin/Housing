@@ -21,6 +21,8 @@ namespace Housing.UWP
         {
             this.InitializeComponent();
 
+            Xamarin.FormsMaps.Init("AsrLq2gleLHlpTl1cvIsl-vo3W2zUkdzYgI_UuyQXW2fHp8VnvH1z32VDCYSPpRX");
+
             LoadApplication(new Housing.App());
         }
     }

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Housing.SearchResultPage">
+    <ListView x:Name="listView">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal" Padding="20, 0, 20, 0">
+                        <StackLayout Spacing="0" HorizontalOptions="StartAndExpand">
+                            <Label Text="{Binding Title}" FontSize="Small" FontAttributes="Bold" VerticalOptions="CenterAndExpand"/>
+                            <Label Text="{Binding Detail}" FontSize="Micro" VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <Label Text="{Binding Price}" FontSize="Medium" FontAttributes="Bold" TextColor="Red" VerticalTextAlignment="Center"></Label>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
